@@ -7,6 +7,7 @@ const PI = 3.14
 const mahasiswa = {
   nama: 'Vito',
   umur: 20,
+  // ES6
   cetakMhs() {
     return `Halo, nama saya ${this.nama}, saya umur ${this.umur} tahun.`
   }
@@ -23,4 +24,5 @@ class Orang {
 // module.exports.mahasiswa = mahasiswa
 // module.exports.Orang = Orang
 
+// ES6
 module.exports = { cetakNama, PI, mahasiswa, Orang }
