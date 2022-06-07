@@ -4,12 +4,14 @@
   "description": "Belajar NodeJS",
   "main": "app.js",
   "scripts": {
-    "start": "node .",
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Arman Dwi Pangestu",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^4.1.0",
+    "nodemon": "^2.0.7",
     "validator": "^13.5.2"
   }
 }
