@@ -23,3 +23,15 @@ const tulisPertanyaan = (pertanyaan) => {
     });
   });
 };
+
+const simpanContact = (nama, email, noHP) => {
+  const contact = { nama, email, noHP };
+  const file = fs.readFileSync("data/contacts.json", "utf8");
+  const contacts = JSON.parse(file);
+
+  contacts.push(contact);
+  fs.writeFileSync("data/contacts.json", JSON.stringify(contacts));
+  rl.close();
+};
+
+module.exports = { tulisPertanyaan, simpanContact };
